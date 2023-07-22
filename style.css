@@ -13,7 +13,6 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none; border: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -37,7 +36,7 @@ html::-webkit-scrollbar-thumb {
 body { 
     background:var(--dark);
     overflow-x: hidden;
-    padding-left: 35rem;
+    padding-left: 25rem;
 }
 
 section {
@@ -50,8 +49,10 @@ section {
     background: url("https://media.istockphoto.com/id/1182636259/video/4k-loopable-color-gradient-background-animation.jpg?s=640x640&k=20&c=0TU6cwJhoYxILkkoveraAuYdmTqNza-Wf4W5qTV-J58=");
     color: #fff;
     margin-top: 1rem;
+    width: 29rem;
     font-size: 2rem;
     border-radius: 5rem;
+    margin-bottom: 2rem;
 }
 
 header { 
@@ -124,18 +125,27 @@ header .navbar ul li a:hover {
 
 .about {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-flow: column;
-    padding:0 15 rem;
+    justify-content: center;
+    background-color: var(--dark);
+    padding: 50px;
 }
 
-.about h3 { 
-    font-size: 2.5rem;
-    color: #fff;
-}  
+.content {
+    display: flex;
+    align-items: center;
+}
 
-.about h1{
+.about h3 {
+    font-size: 5.5rem;
+    color: #fff;
+}
+
+.about h3:hover {
+    color: rgb(255, 193, 118);
+}
+
+.about h1 {
     font-size: 5rem;
     color: #fff;
 }
@@ -143,12 +153,30 @@ header .navbar ul li a:hover {
 .about h1 span {
     color:var(--blue)
 }
-
+    
 .about p {
-    font-size:2rem;
+    font-size: 1.5rem;
     color: #fff;
-    padding: 1rem 0;
+    line-height: 3rem;
+    margin-top: 1rem;
 }
+
+.about img {
+    margin-top: 12rem;
+    max-width: 52rem;
+    animation: floatAnimation 3s ease-in-out infinite;
+
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2rem);
+    }
+}
+
 
 /* Media Queries */
 
@@ -179,12 +207,15 @@ header .navbar ul li a:hover {
 
 @media (max-width:768px) {
     html {
-        font-size: 50%;
+        font-size: 55%;
+    }
+    .about img {
+        display: none;
     }
 }
-
+/* 
 @media (max-width:400px) {
     header {
         width: 100vw;
     }
-}
+} */
