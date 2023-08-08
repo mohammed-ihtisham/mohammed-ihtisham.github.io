@@ -1,0 +1,288 @@
+/* Text Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+:root{
+    --blue:#63A8D3;
+    --dark:#202124;
+    --orange: rgb(255, 193, 118);
+}
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    transition: all .2s linear;
+}
+
+html { 
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width:1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background:#111
+}
+
+html::-webkit-scrollbar-thumb {
+    background:var(--blue);
+}
+
+body { 
+    background:var(--dark);
+    overflow-x: hidden;
+    padding-left: 25rem;
+}
+
+section {
+    min-height: 100vh;
+    padding:1rem;
+}
+
+.btn {
+    padding:.7rem 3rem;
+    background: url("https://media.istockphoto.com/id/1182636259/video/4k-loopable-color-gradient-background-animation.jpg?s=640x640&k=20&c=0TU6cwJhoYxILkkoveraAuYdmTqNza-Wf4W5qTV-J58=");
+    color: #fff;
+    margin-top: 1rem;
+    width: 29rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+    margin-bottom: 2rem;
+}
+
+header { 
+    position: fixed;
+    top:0; left:0; 
+    z-index: 1000;
+    height:100%; 
+    width:25rem;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .profile img { 
+    height:17rem;
+    width:17rem;
+    border-radius: 50%;
+    object-fit: center;
+    margin-bottom: 1rem;
+    border:.5rem solid var(--blue);
+}
+
+header .profile .name { 
+    font-size: 2rem;
+    color: #fff;
+}
+
+header .profile .role { 
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+header .navbar {
+    width:100%;
+}
+
+header .navbar ul {
+    list-style: none;
+    padding:1rem 3rem;
+}
+
+header .navbar ul li a{
+    display: block;
+    padding:1rem;
+    margin:1.5rem 0;
+    background: var(--dark);
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover { 
+    background: var(--blue);
+}
+
+#menu {
+    position: fixed;
+    top:2rem; right:2rem;
+    background: var(--blue);
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark);
+    padding: 50px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.about h3 {
+    font-size: 5.5rem;
+    color: #fff;
+}
+
+.about h3:hover {
+    color: var(--orange);
+}
+
+.about h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.about h1 span {
+    color:var(--blue)
+}
+    
+.about p {
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+.about img {
+    margin-top: 12rem;
+    max-width: 52rem;
+    animation: floatAnimation 3s ease-in-out infinite;
+
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2rem);
+    }
+}
+
+.coursework {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.coursework h3 {
+    font-size: 5.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.coursework h3:hover {
+    color: var(--orange);
+}
+  
+.coursework .card-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+  
+.coursework .card, .special {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    width: 32%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.coursework h2 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.coursework ul {
+    text-align: left;
+    font-size: 1.75rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
+}
+
+.coursework li {
+    margin-bottom: 1rem;
+}
+
+  
+
+.skills h3 {
+    font-size: 5.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.skills h3:hover {
+    color: var(--orange);
+}
+
+
+
+/* Media Queries */
+
+@media (max-width:1200px) {
+    html{
+        font-size: 55%;
+    }
+    .about {
+        padding: 1rem 4rem;
+    }
+    .about img {
+        max-width: 55%;
+    }
+    
+}
+
+@media (max-width:991px) {
+    header{
+        left:-120%;
+    }
+    #menu {
+        display: block;
+    }
+    header.toggle {
+        left:0%;
+    }
+    body {
+        padding:0;
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 55%;
+    }
+    .about img {
+        display: none;
+    }
+}
+/* 
+@media (max-width:400px) {
+    header {
+        width: 100vw;
+    }
+} */
