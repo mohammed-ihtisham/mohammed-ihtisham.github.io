@@ -4,7 +4,6 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <title>Personal Website</title>
 
     <!-- Favicon -->
@@ -18,7 +17,7 @@
     <!-- Navigation Bar -->
   <header>
     <div class="profile">
-      <img src="images/profile.jpg" alt="">
+      <img src="images/profile.jpg" alt="profile">
       <h3 class="name">Mohammed Ihtisham</h3>
       <p class="role">Undergraduate Student @ MIT</p>
     </div>
@@ -30,10 +29,20 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Work Experience</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#download">Download Resume</a></li>
+        <li><a href="resume.pdf" download="resume.pdf">Download Resume</a></li>
       </ul>
+      <div class="links">
+        <a id="email"href="mailto:ihtisham@mit.edu">
+          <img src="images/email.png" height="25px" width="25px">
+        </a>
+        <a id="linkedin" href="https://www.linkedin.com/in/mohammed-ihtisham/">
+          <img src="images/linkedin.png" height="25px" width="25px">
+        </a>
+        <a id="github" href="https://github.com/mohammed-ihtisham">
+          <img src="images/github.png" height="25px" width="25px">
+        </a>
+      </div>
     </nav>
-
   </header>
 
   <i id="menu" class="fa fa-bars"></i>
@@ -46,12 +55,11 @@
           <button class="btn" id="welcome">Welcome to my Portfolio</button>
             <h3>Hello World!</h3>
             <h1>I'm <span>Mohammed Ihtisham</span></h1>
-            <p>I am currently a first-year student at the Massachusetts Institute of Technology
-               (MIT) pursuing a major in Computer Science and Engineering with a minor in Finance.
-                As a prospective software engineer, artificial intelligence enthusiast, and future
-                 entrepreneur, I am always eager to learn how CS & AI can be applied to find innovative
-                  solutions to real-world problems. Please feel free to reach out at ihtisham@mit.edu
-                   if you'd like to chat!</p>
+            <p>I am currently a sophomore at the Massachusetts Institute of Technology
+             (MIT) pursuing a double major in Computer Science and Engineering and Business Analytics. 
+             As a prospective software engineer, artificial intelligence enthusiast, and future entrepreneur, 
+             I am always eager to learn how CS & AI can be applied to find innovative solutions to real-world problems. 
+             Please feel free to reach out at ihtisham@mit.edu if you'd like to chat!</p>
         </div>
         <img src="images/astronaut.png" alt="">
     </div>
@@ -62,51 +70,287 @@
   <section class="coursework" id="coursework">
     <h3>Coursework</h3>
 
+    <div class="education-container">
+      <div class="education">
+        <img src="images/mit.png" alt="MIT Logo">
+        <div>
+            <h1>Massachusetts Institute of Technology</h1>
+            <p>B.S. in Computer Science and Engineering | B.S. in Business Analytics</p>
+            <p>Sep 2022 - May 2026</p>
+        </div>
+      </div>
+    </div>
+
     <div class="card-container">
       <div class="card">
         <h2>General</h2>
         <ul>
           <li>3.091: Introduction to Solid-State Chemistry</li>
+          <li>7.012: Introductory Biology</li>
           <li>8.01: Physics 1</li>
           <li>8.02: Physics 2</li>
-          <li>14.70: Medieval Economic History in Comparative Perspective</li>
-          <li>14.73: The Challenge of World Poverty</li>
+          <li>18.02: Multivariable Calculus</li>
+          <li>18.06: Linear Algebra</li>
+          <li>21H.C30: Encoding Culture: Computation Methods in the Humanities, Arts, and Social Sciences</li>
         </ul>
       </div>
       <div class="card">
         <h2>Computer Science</h2>
         <ul>
-          <li>6.101: Fundamentals of Programming</li>
-          <li>6.190: Introduction to Low-Level Programming in C and Assembly</li>
           <li>6.100A: Introduction to Computer Science Programming in Python</li>
+          <li>6.101: Fundamentals of Programming</li>
+          <li>6.120: Mathematics for Computer Science</li>
+          <li>6.121: Introduction to Algorithms</li>
+          <li>6.180: Computer Systems Engineering</li>
+          <li>6.190: Introduction to Low-Level Programming in C and Assembly</li>
+          <li>6.191: Computation Structures</li>
         </ul>
       </div>
       <div class="card">
-        <h2>Mathematics</h2>
+        <h2>Business</h2>
         <ul>
-          <li>18.02: Multivariable Calculus</li>
-          <li>18.06: Linear Algebra</li>
+          <li>2.A16: Founder's Journey</li>
+          <li>14.01: Principles of Microeconomics</li>
+          <li>14.70: Medieval Economic History in Comparative Perspective</li>
+          <li>14.73: The Challenge of World Poverty</li>
+          <li>15.053: Optimization Methods in Business Analytics</li>
+          <li>15.8141: Marketing Innovation</li>
         </ul>
       </div>
     </div>
-    
-    
-  
-
   </section>
 
-    <!-- Skills Section -->
+  <!-- Skills Section -->
 
-    <section class="skills" id="skills">
-      <h3>Skills</h3>
-      <h3>UNDER CONSTRUCTION!</h3>
-      
-      
+  <section class="skills" id="skills">
+    <h3>Skills</h3>
+    <div class="card-container">
+      <div class="skill-container">
+        <div class="skill-card">
+          <img src="images/python.png" alt="Python" height="75px">
+          <p>Python</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/java.png" alt="Java" height="75px">
+          <p>Java</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/c.png" alt="C" height="75px">
+          <p>C</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/html.png" alt="HTML" height="75px">
+          <p>HTML</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/css.png" alt="CSS" height="75px">
+          <p>CSS</p>
+        </div>
+        <div class="skill-card">   
+          <img src="images/Javascript.png" alt="JavaScript" height="75px">
+          <p>JavaScript</p>
+        </div>
+      </div>
+
+      <div class="progress-container">
+        <h1>Software Engineering</h1>
+        <div class="progressBar">
+          <div style="width:95%"></div>
+        </div>
+        <h1>Web Development</h1>
+        <div class="progressBar">
+          <div style="width:85%"></div>
+        </div>
+        <h1>Data Science</h1>
+        <div class="progressBar">
+          <div style="width:90%"></div>
+        </div>
+        <h1>Android Development</h1>
+        <div class="progressBar">
+          <div style="width:75%"></div>
+        </div>
+      </div>
+
+      <div class="skill-container">
+        <div class="skill-card">
+          <img src="images/numpy.png" alt="NumPy" height="75px">
+          <p>NumPy</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/pandas.png" alt="Pandas" height="75px">
+          <p>Pandas</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/reactjs.png" alt="ReactJS" height="75px">
+          <p>ReactJS</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/django.png" alt="Django" height="75px">
+          <p>Django</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/sqlite.png" alt="SQLite" height="75px">
+          <p>SQLite</p>
+        </div>
+        <div class="skill-card">   
+          <img src="images/git.png" alt="Git" height="75px">
+          <p>Git</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+
+  <section class="experience" id="experience">
+    <h3>Experience</h3>
+    <div class="experience-container">
+      <div class="exp">
+        <div class="header">
+          <img src="images/mit.png" alt="MIT Logo">
+          <div>
+              <h1>Massachusetts Institute of Technology</h1>
+              <p>6.101 (Fundamentals of Programming) Lab Assistant (LA)</p>
+              <button class="date">Sep 2023 - Present</button>
+          </div>
+        </div>
+        <div class="info">
+          <ul>
+            <li>Helped introductory computer science students formulate problem-solving strategies, debug and optimize code, 
+              and instill good coding practices during open lab hours.</li>
+            <li>Worked through and helped debug, calibrate, and test weekly lab assignments that focus on important concepts such as
+                recursion/iteration, graph search algorithms, and functional programming. </li>
+            <li>Conducted checkoffs to assess students' understanding of the material and their ability to make well- informed choices
+               for data structures, helper functions, and code readability/complexity.</li>    
+          </ul>
+        </div>
+        <div class="skill-tags">
+          <span class="skill">Skills:</span>
+          <button class="button">
+            <div class="python-tag"></div>
+            <span>Python</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="exp">
+        <div class="header">
+          <img src="images/northeastern.png" alt="Northeastern Logo">
+          <div>
+              <h1>Decision Analytics Lab at Northeastern University</h1>
+              <p>Research Intern</p>
+              <button class="date">Jun 2023 - Sep 2023</button>
+          </div>
+        </div>
+        <div class="info">
+          <ul>
+            <li>Utilized NumPy and Pandas to perform extensive data cleaning and statistical tests (Chi-Squared and Logistic Regression) on large
+               datasets to research the impact of recessions on the treatment retention rate of patients struggling with opioid use disorders (OUDs).</li>
+            <li>Leveraged ML libraries like XGBoost to train predictive models on the dataset, yielding robust insights into the correlation between economic
+               recessions and treatment retention rates among patients with OUDs. </li> 
+          </ul>
+        </div>
+        <div class="skill-tags">
+          <span class="skill">Skills:</span>
+          <button class="button">
+            <div class="python-tag"></div>
+            <span>Python</span>
+          </button>
+          <button class="button">
+            <div class="numpy-tag"></div>
+            <span>NumPy</span>
+          </button>
+          <button class="button">
+            <div class="pandas-tag"></div>
+            <span>Pandas</span>
+          </button>
+          <button class="button">
+            <div class="xgboost-tag"></div>
+            <span>XGBoost</span>
+          </button>
+          <button class="button">
+            <div class="data-analytics-tag"></div>
+            <span>Data Analysis</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+
+  <section class="projects" id="projects">
+    <h3>Projects</h3>
+    <div class="project-container">
+      <div class="project-card">
+        <img src="images/chatmit.png" alt="">
+        <p class="card-title">ChatMIT</p>
+        <p class="card-body">
+          Implemented a user-friendly chatbot that provides instant answers to any questions that prospective and current students may have about MIT.
+        </p>
+        <div class="skill-tags">
+          <button class="button">
+            <div class="reactjs-tag"></div>
+            <span>ReactJS</span>
+          </button>
+          <button class="button">
+            <div class="openai-tag"></div>
+            <span>OpenAI</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/quiz.png" alt="">
+        <p class="card-title">TriviaQuest</p>
+        <p class="card-body">
+          Created a trivia game GUI that allows users to answer questions across different categories and track their scores as they progress.
+        </p>
+        <div class="skill-tags">
+          <button class="button">
+            <div class="python-tag"></div>
+            <span>Python</span>
+          </button>
+          <button class="button">
+            <div class="tkinter-tag"></div>
+            <span>Tkinter</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/test.png" alt="">
+        <p class="card-title">Student Loan Calculator</p>
+        <p class="card-body">
+          Developed an app that helps students estimate the costs of attending college if they take out a student loan. 
+        </p>
+        <div class="skill-tags">
+          <button class="button">
+            <div class="java-tag"></div>
+            <span>Java</span>
+          </button>
+          <button class="button">
+            <div class="android-tag"></div>
+            <span>Android Development</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="footer">
+    <p>© 2024 Mohammed Ihtisham</p>
+    <a href="mailto:ihtisham@mit.edu">
+      <img src="images/email.png">
+    </a>
+    <a href="https://www.linkedin.com/in/mohammed-ihtisham/">
+      <img src="images/linkedin.png">
+    </a>
+    <a href="https://github.com/mohammed-ihtisham">
+      <img src="images/github.png">
+    </a>  
+  </div>
     
-  
-    </section>
-
-  <!-- JS -->
-  <script src="js/script.js"></script>
   </body>
 </html>
